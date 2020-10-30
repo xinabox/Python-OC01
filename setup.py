@@ -3,16 +3,16 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="xinabox-CHIP",
-    version="0.0.2",
+    name="xinabox-OC01",
+    version="0.0.1",
     author="Luqmaan Baboo",
     author_email="luqmaanbaboo@gmail.com",
-    description="a template package for xchips",
+    description="BME280 Environmental Sensor",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/xinabox/Python-XCHIP",
-    install_requires=["xinabox-CORE",],
-    py_modules=["xChip",],
+    url="https://github.com/xinabox/Python-OC01",
+    install_requires = ["xinabox-CORE",],
+    py_modules=["xOC01",],
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
