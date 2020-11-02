@@ -4,7 +4,7 @@
 ![Build status badge](https://github.com/xinabox/Python-OC01/workflows/Python/badge.svg)
 ![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)
 
-# Python-xOC01
+# Python-OC01
 
 Insert description of xChip
 
