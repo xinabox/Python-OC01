@@ -22,13 +22,13 @@ PCA9536_PIN2_INPUT = 0x04
 PCA9536_PIN3_OUTPUT = 0x00
 PCA9536_PIN3_INTPUT = 0x08
 
-OUT0 = 0x01
-OUT1 = 0x02
-OUT2 = 0x04
-OUT3 = 0x08
-
-
 class xOC01:
+
+    OUT0 = 0x01
+    OUT1 = 0x02
+    OUT2 = 0x04
+    OUT3 = 0x08
+
     def __init__(self, addr=0x41):
         self.i2c = xCore()
         self.addr = addr
