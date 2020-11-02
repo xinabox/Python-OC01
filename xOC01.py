@@ -42,7 +42,7 @@ class xOC01:
         self.init(PCA9536_ALL_OUTPUTS_OFF)
 
     def digitalWrite(self, pin, state):
-        pin_state = self.i2c.write_read(self.addr, PCA9536_REG_OUTPUT_PORT)[0]
+        pin_state = self.i2c.write_read(self.addr, PCA9536_REG_OUTPUT_PORT, 1)[0]
         if state == True:
             pin_state |= (pin_state | pin)
             self.i2c.write_bytes(self.addr, PCA9536_REG_OUTPUT_PORT, pin_state)
@@ -51,5 +51,5 @@ class xOC01:
             self.i2c.write_bytes(self.addr, PCA9536_REG_OUTPUT_PORT, pin_state)
 
     def getStatus(self):
-        pin_state = self.i2c.write_read(self.addr, PCA9536_REG_OUTPUT_PORT)[0]
+        pin_state = self.i2c.write_read(self.addr, PCA9536_REG_OUTPUT_PORT, 1)[0]
         return pin_state
