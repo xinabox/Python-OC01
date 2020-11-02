@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="xinabox-OC01",
-    version="0.0.4",
+    version="0.0.5",
     author="Luqmaan Baboo",
     author_email="luqmaanbaboo@gmail.com",
     description="4-channel DC output",
